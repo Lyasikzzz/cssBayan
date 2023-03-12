@@ -25,3 +25,192 @@ img {
     margin: 1em auto 1em auto;
     transition: .3s;
 }
+
+
+.header {
+    padding-top: 2rem;
+    border-bottom: 0.2em solid #9d9d9d74;
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.main:hover .meme_name{
+    color: #171717f1;
+}
+
+.main:hover > .meme__container .plus{
+    opacity: 1;
+}
+
+.meme__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 0.2em solid #9d9d9d74;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.cheackbox {
+    display: none;
+}
+
+/*MEME ONE START */
+#cheack_1:checked ~ #meme_1 {
+    display: block;
+}
+
+#cheack_1:checked ~ #plus_1 {
+    transform: rotate(45deg);
+}
+
+#cheack_1:checked ~ .meme_name {
+    color: #171717f1;
+}
+
+#container_one:hover #meme_1 {
+    display: block;
+}
+
+#container_one:hover #plus_1 {
+    opacity: 1;
+}
+
+#container_one:active #meme_1 {
+    opacity: 0.8;
+}
+
+#container_one:active .meme_name {
+    color: blue;
+}
+
+#container_one:active .plus {
+    width: 2%;
+    height: 2%;
+}
+/*MEME ONE END */
+
+/*MEME TWO START */
+#cheack_2:checked ~ #meme_2 {
+    display: block;
+}
+
+#cheack_2:checked ~ #plus_2 {
+    transform: rotate(45deg);
+}
+
+#cheack_2:checked ~ .meme_name {
+    color: #171717f1;
+}
+
+#container_two:hover #meme_2 {
+    display: block;
+}
+
+#container_two:hover #plus_2 {
+    opacity: 1;
+}
+
+#container_two:active #meme_2 {
+    opacity: 0.8;
+}
+
+#container_two:active .meme_name {
+    color: blue;
+}
+
+#container_two:active .plus {
+    width: 2%;
+    height: 2%;
+}
+/*MEME TWO END */
+
+/*MEME THREE START */
+#cheack_3:checked ~ #meme_3 {
+    display: block;
+}
+
+#cheack_3:checked ~ #plus_3 {
+    transform: rotate(45deg);
+}
+
+#cheack_3:checked ~ .meme_name {
+    color: #171717f1;
+}
+
+#container_three:hover #meme_3 {
+    display: block;
+}
+
+#container_three:hover #plus_3 {
+    opacity: 1;
+}
+
+#container_three:active #meme_3 {
+    opacity: 0.8;
+}
+
+#container_three:active .meme_name {
+    color: blue;
+}
+
+#container_three:active .plus {
+    width: 2%;
+    height: 2%;
+}
+/*MEME THREE END */
+
+/*MEME FOUR START */
+#cheack_4:checked ~ #meme_4 {
+    display: block;
+}
+
+#cheack_4:checked ~ #plus_4 {
+    transform: rotate(45deg);
+}
+
+#cheack_4:checked ~ .meme_name {
+    color: #171717f1;
+}
+
+#container_four:hover #meme_4 {
+    display: block;
+}
+
+#container_four:hover #plus_4 {
+    opacity: 1;
+}
+
+#container_four:active #meme_4 {
+    opacity: 0.8;
+}
+
+#container_four:active .meme_name {
+    color: blue;
+}
+
+#container_four:active .plus {
+    width: 2%;
+    height: 2%;
+}
+/*MEME FOUR END */
+
+.meme_name {
+    font-size: 1.5em;
+    margin: 1em 0 1em 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.plus {
+    display: block;
+    opacity: 0;
+    width: 3%;
+    height: 3%;
+    margin: auto 0;
+    transition: .3s;
+}
