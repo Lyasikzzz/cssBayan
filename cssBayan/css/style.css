@@ -214,3 +214,38 @@ img {
     margin: auto 0;
     transition: .3s;
 }
+
+@media (max-width: 820px) {
+
+    body {
+        max-width: 75%; 
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .meme_name {
+        font-size: 2em;
+    }
+
+    .main:hover .meme_name{
+        color: blue;
+    }
+
+    .plus {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+
+    body {
+        max-width: 90%; 
+    }
+
+    .meme_name {
+        font-size: 1.7em;
+    }
+
+}
